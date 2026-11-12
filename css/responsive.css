@@ -1,0 +1,12 @@
+@media (min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}.timeline{grid-template-columns:1fr 1fr}.foot{grid-template-columns:1.5fr 1fr 1fr}}
+@media (min-width:900px){
+ #burger{display:none}
+ #menu{position:static;display:flex!important;flex-direction:row;align-items:center;background:none;border:0;padding:0;gap:1.4rem}
+ #menu a.btn{margin:0}
+ .hero-in{grid-template-columns:1.2fr .9fr;align-items:center}
+ .about{grid-template-columns:1.6fr 1fr;align-items:start}
+ .contact{grid-template-columns:1fr 1.3fr}
+ .grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (min-width:1280px){.sec{padding:6.5rem 0}}
+@media (hover:none){#glow{display:none}}

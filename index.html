@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wael Balhoudi | Cybersecurity Master's Student</title>
+<meta name="description" content="Portfolio of Wael Balhoudi, Master's student in cybersecurity: web application security, security auditing, risk management, network and cloud security. Seeking a PFE internship.">
+<meta property="og:title" content="Wael Balhoudi | Cybersecurity Master's Student">
+<meta property="og:description" content="Web application security, security auditing and infrastructure protection. Open to PFE internship opportunities.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wael-balhoudi-portfolio.vercel.app">
+<meta name="theme-color" content="#080D18">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23080D18'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='%2300D6A0' font-family='monospace' font-weight='700'%3EWB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="progress" aria-hidden="true"></div>
+<div id="glow" aria-hidden="true"></div>
+
+<header id="nav">
+  <div class="wrap nav-in">
+    <a href="#home" class="logo" aria-label="Wael Balhoudi, home">WB<span>.</span></a>
+    <nav id="menu" aria-label="Main">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+      <a class="btn btn-sm btn-primary nav-cv" href="assets/files/Wael-Balhoudi-CV.pdf" download>Download CV</a>
+    </nav>
+    <button id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+<section id="home" class="hero">
+  <div id="particles-js" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="label mono stagger">Master's student in cybersecurity</p>
+      <h1 class="stagger">Securing the digital world through <span class="grad">security engineering</span>.</h1>
+      <p class="sub stagger">Web Application Security | Security Auditing | Risk Management | Network &amp; Cloud Security</p>
+      <p class="lead stagger">I explore vulnerabilities, assess security risks and build practical solutions to strengthen applications, networks and infrastructure.</p>
+      <div class="btns stagger">
+        <a href="#projects" class="btn btn-primary">Explore my projects <i class="arr">→</i></a>
+        <a href="assets/files/Wael-Balhoudi-CV.pdf" class="btn btn-ghost" download>Download my CV</a>
+        <a href="#contact" class="btn btn-link">Contact me <i class="arr">→</i></a>
+      </div>
+    </div>
+    <div class="term float" role="img" aria-label="Decorative terminal showing name, focus areas and internship status">
+      <div class="term-bar"><i></i><i></i><i></i><span class="mono">wael@portfolio: ~</span></div>
+      <pre class="mono" id="term-out"></pre>
+      <span class="chip c1 mono">OWASP Top 10</span><span class="chip c2 mono">ISO 27001</span><span class="chip c3 mono">pfSense · Wazuh</span>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="sec">
+  <div class="wrap">
+    <h2 class="reveal">About me</h2>
+    <div class="about reveal">
+      <div>
+        <p>I am a Master's student in Computer Systems and Network Administration, specializing in cybersecurity.</p>
+        <p>My interests include web application security, vulnerability assessment, penetration testing, information security auditing, risk management, network security and cloud security.</p>
+        <p>Through academic projects and hands-on security laboratories, I have developed practical experience in security testing, infrastructure monitoring, network protection and secure system administration. My work so far is academic and laboratory-based; I have no professional auditing experience yet, and that is what a PFE internship would help me build.</p>
+        <blockquote>Effective cybersecurity requires more than identifying vulnerabilities. It requires understanding risks, evaluating their impact, implementing appropriate controls and continuously improving security.</blockquote>
+      </div>
+      <aside class="card profile tilt">
+        <div class="avatar"><img src="assets/images/profile.png" alt="Portrait of Wael Balhoudi" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'WB'}))"></div>
+        <h3>Wael Balhoudi</h3>
+        <ul class="mono">
+          <li>Master's student</li><li>Cybersecurity specialization</li><li>Tunisia</li><li>PFE internship candidate</li><li>Main interest: web application security</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="expertise" class="sec alt">
+  <div class="wrap">
+    <h2 class="reveal">Cybersecurity expertise</h2>
+    <p class="sec-sub reveal">Knowledge built through coursework and laboratories. It is academic knowledge, not professional audit experience.</p>
+    <div class="grid" id="expertise-grid"></div>
+  </div>
+</section>
+
+<section id="projects" class="sec">
+  <div class="wrap">
+    <h2 class="reveal">Selected cybersecurity projects</h2>
+    <p class="sec-sub reveal">Practical laboratories and engineering projects demonstrating my interest in cybersecurity, security assessment and infrastructure protection. All testing was performed in authorized, controlled environments.</p>
+    <div class="filters reveal" id="filters" role="group" aria-label="Filter projects"></div>
+    <div class="grid projects" id="projects-grid"></div>
+  </div>
+</section>
+
+<section id="skills" class="sec alt">
+  <div class="wrap">
+    <h2 class="reveal">Technical skills &amp; toolkit</h2>
+    <div class="grid" id="skills-grid"></div>
+  </div>
+</section>
+
+<section id="education" class="sec">
+  <div class="wrap">
+    <h2 class="reveal">Education &amp; academic background</h2>
+    <div class="timeline">
+      <article class="card reveal">
+        <h3>Master's degree: Computer Systems and Network Administration</h3>
+        <p class="mono meta">ISET Sfax, Tunisia · Specialization: Cybersecurity</p>
+        <ul class="tags"><li>Web Application Security</li><li>E-commerce Security</li><li>Cloud and Network Security</li><li>Advanced Security</li><li>Security Audit and Certification</li><li>CCNA Security preparation</li></ul>
+      </article>
+      <article class="card reveal">
+        <h3>Applied Bachelor's degree in Information Technology</h3>
+        <p class="mono meta">ISET Sidi Bouzid, Tunisia · Specialization: Software Development · 2022–2025</p>
+      </article>
+    </div>
+    <h3 class="sub-h reveal">Continuous learning</h3>
+    <ul class="tags reveal">
+      <li>Web Application Security <em>Academic coursework</em></li>
+      <li>Security Auditing <em>Academic coursework</em></li>
+      <li>ISO 27001 &amp; ISO 27005 <em>Currently studying</em></li>
+      <li>Cloud Security <em>Academic coursework</em></li>
+      <li>Network Security <em>Certification preparation (CCNA Security)</em></li>
+      <li>Infrastructure Automation <em>Currently studying</em></li>
+    </ul>
+  </div>
+</section>
+
+<section id="internship" class="sec">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <h2>Open to PFE internship opportunities</h2>
+      <p>I am seeking a Master's final-year internship in cybersecurity, particularly in web application security, penetration testing, security auditing, risk management, vulnerability assessment, and network and cloud security.</p>
+      <p>I am motivated to contribute to real-world security assessments, strengthen my technical capabilities and work with experienced cybersecurity professionals.</p>
+      <a href="#contact" class="btn btn-primary">Let's discuss an internship opportunity <i class="arr">→</i></a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="sec alt">
+  <div class="wrap">
+    <h2 class="reveal">Let's connect</h2>
+    <p class="sec-sub reveal">Interested in discussing cybersecurity, security auditing or potential PFE internship opportunities? Feel free to contact me.</p>
+    <div class="contact">
+      <ul class="links reveal">
+        <li><b>Email</b><a href="mailto:waelbalhoudi@gmail.com">waelbalhoudi@gmail.com</a></li>
+        <li><b>LinkedIn</b><a href="https://www.linkedin.com/in/wael-balhoudi-a89045275/" target="_blank" rel="noopener">wael-balhoudi</a></li>
+        <li><b>GitHub</b><a href="https://github.com/WaelBalhoudi" target="_blank" rel="noopener">WaelBalhoudi</a></li>
+        <li><b>Location</b><span>Tunisia</span></li>
+      </ul>
+      <form id="form" class="card reveal" novalidate>
+        <label>Full name<input name="name" type="text" autocomplete="name" required minlength="2"></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required></label>
+        <label>Subject<input name="subject" type="text" required minlength="3"></label>
+        <label>Message<textarea name="message" rows="5" required minlength="10"></textarea></label>
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+        <button class="btn btn-primary" type="submit">Send message <i class="arr">→</i></button>
+        <p id="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><strong>Wael Balhoudi</strong><p>Cybersecurity Master's student</p></div>
+    <nav aria-label="Footer"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+    <nav aria-label="Social"><a href="https://github.com/WaelBalhoudi" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/wael-balhoudi-a89045275/" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:waelbalhoudi@gmail.com">Email</a></nav>
+  </div>
+  <p class="copy">© <span id="year"></span> Wael Balhoudi. All rights reserved.</p>
+</footer>
+
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="m-title" hidden>
+  <div class="modal-box"><button id="m-close" class="m-close" aria-label="Close dialog">×</button><div id="m-body"></div></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/particles-config.js"></script>
+<script src="js/interactions.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
